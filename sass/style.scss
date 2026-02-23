@@ -359,6 +359,7 @@ a, a[href^="tel"] {
 .body-accueil{
     overflow-x: hidden;
     overflow-y: auto;
+    visibility: hidden;
 }
 
 .slide {
@@ -366,7 +367,7 @@ a, a[href^="tel"] {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
