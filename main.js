@@ -6,12 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!slide || !bodyAccueil) return;
 
-    // Montrer le contenu principal quand le DOM est prêt
     bodyAccueil.style.visibility = "visible";
 
     slide.style.transition = "transform 0.8s ease-in-out";
 
-    // Vérifie si la slide est déjà masquée
     if (slide.style.transform === "translateY(-100vh)") {
         bodyAccueil.style.overflowY = "auto";
     } else {
