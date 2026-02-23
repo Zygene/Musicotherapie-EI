@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : sam. 21 fév. 2026 à 18:29
+-- Généré le : lun. 23 fév. 2026 à 17:26
 -- Version du serveur : 8.0.31
 -- Version de PHP : 8.0.26
 
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `contact` (
   `message` text NOT NULL,
   `date` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3;
 
 --
 -- Déchargement des données de la table `contact`
@@ -96,8 +96,8 @@ CREATE TABLE IF NOT EXISTS `services` (
 --
 
 INSERT INTO `services` (`id`, `nom`, `description`, `objectifs`, `duree`, `prix`, `image`, `date`) VALUES
-(1, 'Séance individuelle', 'Adolescents, adultes, seniors', 'Gestion des émotions, stress, confiance en soi, soutien lors de périodes de transition', '45 - 60 minutes', '50', '1177034352SeanceIndividuelle.jpg', '2026-02-12'),
-(2, 'Séance enfant', 'Enfants à partir de 3 ans', 'Apaisement, attention, communication, expression émotionnelle', '45 - 60 minutes', '45', '837746058SeanceEnfant.jpg', '2026-02-12'),
+(1, 'Séance individuelle', 'Adolescents, adultes, seniors', 'Gestion des émotions, stress, confiance en soi, soutien lors de périodes de transition', '45 - 60 minutes', '50', '1101729182SeanceIndividuelle.jpg', '2026-02-12'),
+(2, 'Séance enfant', 'Enfants à partir de 3 ans', 'Apaisement, attention, communication, expression émotionnelle', '45 - 60 minutes', '45', '210631268SeanceEnfant.jpg', '2026-02-12'),
 (3, 'Séance parent-enfant', 'Parent(s) et enfant(s)', 'Lien affectif, compréhension mutuelle, accompagnement relationnel', '45 - 60 minutes', '60', '229756658SeanceParentEnfant.jpg', '2026-02-12'),
 (4, 'Séance de couple', 'Couples', 'Communication, écoute, gestion des tensions, reconnexion', '45 - 60 minutes', '60', '1035113087SeanceCouple.jpg', '2026-02-12'),
 (5, 'Séance de groupe', 'Groupes constitués', 'Interaction sociale, expression émotionnelle, cohésion de groupe', '60 - 90 minutes', 'Sur devis, selon la durée et le nombre de participants', '468945140SeanceGroupe.jpg', '2026-02-12');

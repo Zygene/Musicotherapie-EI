@@ -595,41 +595,18 @@ label {
 
 
 @media (max-width: 768px) {
-
-    .conteneur-services {
-        width: 90%;
-    }
-
-    table {
-        width: 100%;
-        border: 0;
-    }
-
     table thead {
-        display: none;
-    }
-
-    table tr {
-        display: block;
-        margin-bottom: 1.5rem;
-        padding: 1.2rem;
-        border-radius: 1rem;
-        background-color: $blanc;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-
-    table td {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        text-align: left;
-        gap: 0.3rem;
+        display: none; // on masque l'en-tête
     }
 
     table td::before {
         content: attr(data-label);
         font-weight: 600;
+    }
+
+    /* Masquer uniquement "Actions" sur mobile */
+    table td[data-label="Actions"]::before {
+        content: ""; // supprime le texte "Actions"
     }
 
     table td[data-label="Actions"] {
@@ -657,5 +634,32 @@ label {
         display: inline-flex;
         align-items: center;
         margin: 0 !important;
+    }
+
+    table tr {
+        display: block;
+        margin-bottom: 1.5rem;
+        padding: 1.2rem;
+        border-radius: 1rem;
+        background-color: $blanc;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    table td {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+        gap: 0.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-admin .navbar-brand {
+        font-size: 1rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }

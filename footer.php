@@ -32,11 +32,11 @@
         </div>
 
         <div class="footer-right">
-            <a href="#"><img src="images/general/instagram.svg" alt="Instagram" class="social-icon"></a>
+            <a href="instagram.com"><img src="images/general/instagram.svg" alt="Instagram" class="social-icon"></a>
             <span class="separateur"></span>
-            <a href="#"><img src="images/general/facebook.svg" alt="Facebook" class="social-icon"></a>
+            <a href="facebook.com"><img src="images/general/facebook.svg" alt="Facebook" class="social-icon"></a>
             <span class="separateur"></span>
-            <a href="#"><img src="images/general/linkedin.svg" alt="LinkedIn" class="social-icon"></a>
+            <a href="linkedin.com"><img src="images/general/linkedin.svg" alt="LinkedIn" class="social-icon"></a>
         </div>
  </div>
 

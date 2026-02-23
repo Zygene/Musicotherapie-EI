@@ -69,27 +69,28 @@ $req = $bdd->query("SELECT id, prenom, nom, telephone, email, date FROM contact 
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="images/icones/apple-touch-monochrome-57px.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icones/apple-touch-monochrome-72px.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/icones/apple-touch-monochrome-76px.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icones/apple-touch-monochrome-114px.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/icones/apple-touch-monochrome-120px.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/icones/apple-touch-monochrome-144px.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/icones/apple-touch-monochrome-152px.png">
+
+    <link rel="icon" type="image/svg+xml" href="images/icones/favicon-monochrome-svg.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icones/favicon-monochrome-32px.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icones/favicon-monochrome-16px.png" media="(prefers-color-scheme: light)">
+
+    <link rel="icon" type="image/svg+xml" href="images/icones/favicon-monochrome-dark-svg.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icones/favicon-monochrome-dark-32px.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icones/favicon-monochrome-dark-16px.png" media="(prefers-color-scheme: dark)">
+
+    <link rel="mask-icon" href="images/icones/safari-svg.svg" color="#000000">
+
     <title>Administration des contacts</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-
-    <link rel="apple-touch-icon" sizes="57x57" href="/images/icones/apple-touch-monochrome-57px.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/images/icones/apple-touch-monochrome-72px.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/images/icones/apple-touch-monochrome-76px.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/images/icones/apple-touch-monochrome-114px.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/images/icones/apple-touch-monochrome-120px.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/images/icones/apple-touch-monochrome-144px.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/images/icones/apple-touch-monochrome-152px.png">
-
-    <link rel="icon" type="image/svg+xml" href="/images/icones/favicon-monochrome-svg.svg" media="(prefers-color-scheme: light)">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/icones/favicon-monochrome-32px.png" media="(prefers-color-scheme: light)">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/icones/favicon-monochrome-16px.png" media="(prefers-color-scheme: light)">
-
-    <link rel="icon" type="image/svg+xml" href="/images/icones/favicon-monochrome-dark-svg.svg" media="(prefers-color-scheme: dark)">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/icones/favicon-monochrome-dark-32px.png" media="(prefers-color-scheme: dark)">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/icones/favicon-monochrome-dark-16px.png" media="(prefers-color-scheme: dark)">
-
-    <link rel="mask-icon" href="/images/icones/safari-svg.svg" color="#000000">
-
     <link rel="stylesheet" href="admin.css">
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -123,23 +124,23 @@ $req = $bdd->query("SELECT id, prenom, nom, telephone, email, date FROM contact 
                     <th>E-mail</th>
                     <th>Téléphone</th>
                     <th>Date</th>
-                    <th class="text-center">Action</th>
+                    <th class="text-center">Actions</th>
                 </tr>
             </thead>
             <tbody>
             <?php while($don = $req->fetch()): ?>
                 <tr>
-                    <td><?= htmlspecialchars($don['prenom']) ?></td>
-                    <td><?= htmlspecialchars($don['nom']) ?></td>
-                    <td><?= htmlspecialchars($don['email']) ?></td>
-                    <td><?= formatTelephone($don['telephone']) ?></td>
+                    <td data-label="Prénom"><?= htmlspecialchars($don['prenom']) ?></td>
+                    <td data-label="Nom"><?= htmlspecialchars($don['nom']) ?></td>
+                    <td data-label="E-mail"><?= htmlspecialchars($don['email']) ?></td>
+                    <td data-label="Téléphone"><?= formatTelephone($don['telephone']) ?></td>
                     <?php 
                     $dateObj = new DateTime($don['date']);
                     $fmt = new IntlDateFormatter('fr_FR', IntlDateFormatter::LONG, IntlDateFormatter::NONE);
                     $fmt->setPattern('d MMMM yyyy - HH:mm');
                     ?>
-                    <td><?= $fmt->format($dateObj) ?></td>
-                    <td class="text-center">
+                    <td data-label="Date"><?= $fmt->format($dateObj) ?></td>
+                    <td data-label="Actions" class="text-center">
                         <a href="message.php?id=<?= $don['id'] ?>" class="btn btn-service-modifier m-1">Afficher</a>
                         <a href="contact.php?delete=<?= $don['id'] ?>" 
                            class="btn btn-service-supprimer m-1"

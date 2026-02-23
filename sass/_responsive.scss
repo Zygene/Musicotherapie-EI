@@ -954,7 +954,7 @@
         &::after {
         width: 8vh;
         height: 8vh;
-        bottom: 2rem;
+        bottom: 5rem;
         }
     }
 
@@ -1197,6 +1197,7 @@
     }
 
     .slide::after {
+        bottom: 5rem;
         left: 44%;
     }
 
@@ -1508,7 +1509,7 @@
     .titre-temoignages {
 
         img {
-            top: -10rem;
+            top: -13rem;
             right: -13rem;
             height: 25em;
         }
@@ -1555,7 +1556,7 @@
     }
 
     .informations-content .infos-image-right {
-        margin-top: 10em;
+        margin-top: 15em;
     }
 
 
@@ -1572,7 +1573,7 @@
 @media screen and (max-width: 385px) {
 
     .informations-content .infos-image-right {
-        margin-top: 15em;
+        margin-top: 18em;
     }
 
 
@@ -1598,13 +1599,13 @@
 @media screen and (max-width: 350px) {
 
     .informations-content .infos-image-right {
-        margin-top: 18em;
+        margin-top: 22em;
     }
 }
 
 @media screen and (max-width: 330px) {
 
     .informations-content .infos-image-right {
-        margin-top: 22em;
+        margin-top: 26em;
     }
 }

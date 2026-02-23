@@ -90,6 +90,11 @@ html, body {
     margin: 0 auto;
 }
 
+a, a[href^="tel"] {
+    color: $noir;
+    text-decoration: none;
+}
+
 
 //---------------------- Header / Footer ----------------------
 
