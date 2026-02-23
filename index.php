@@ -50,11 +50,11 @@
                 </div>
 
                 <div class="header-right">
-                    <a href="instagram.com"><img src="images/general/instagram.svg" alt="Instagram" class="social-icon"></a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img src="images/general/instagram.svg" alt="Instagram" class="social-icon"></a>
                     <span class="separateur"></span>
-                    <a href="facebook.com"><img src="images/general/facebook.svg" alt="Facebook" class="social-icon"></a>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="images/general/facebook.svg" alt="Facebook" class="social-icon"></a>
                     <span class="separateur"></span>
-                    <a href="linkedin.com"><img src="images/general/linkedin.svg" alt="LinkedIn" class="social-icon"></a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><img src="images/general/linkedin.svg" alt="LinkedIn" class="social-icon"></a>
                 </div>
             </header>
 
@@ -86,11 +86,11 @@
             </section>
 
             <div class="social-responsive">
-                <a href="instagram.com"><img src="images/general/instagram.svg" alt="Instagram" class="social-icon"></a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img src="images/general/instagram.svg" alt="Instagram" class="social-icon"></a>
                 <span class="separateur"></span>
-                <a href="facebook.com"><img src="images/general/facebook.svg" alt="Facebook" class="social-icon"></a>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="images/general/facebook.svg" alt="Facebook" class="social-icon"></a>
                 <span class="separateur"></span>
-                <a href="linkedin.com"><img src="images/general/linkedin.svg" alt="LinkedIn" class="social-icon"></a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><img src="images/general/linkedin.svg" alt="LinkedIn" class="social-icon"></a>
             </div>
 
             <div class="copyright">
